@@ -1,7 +1,8 @@
 import React from "react";
 import Expenses from "./components/Expenses/Expenses";
+import NewExpense from "./components/NewExpenses/NewExpense";
 
-function App() {
+const App = () => {
   const expenses = [
     {
       title: "Fishing rod",
@@ -28,9 +29,9 @@ function App() {
   //wrapper () are essential as you can only return one element at a time, this allows us to return multiple elements side by side
   return (
     <div>
-      <h2>Let's get started!</h2>
+      <NewExpense />
       <Expenses items={expenses} />
     </div>
   );
-}
+};
 export default App;
