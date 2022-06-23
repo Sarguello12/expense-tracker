@@ -1,5 +1,5 @@
-import ExpenseItem from "./components/ExpenseItem";
-import Expenses from "./components/Expenses";
+import React from "react";
+import Expenses from "./components/Expenses/Expenses";
 
 function App() {
   const expenses = [
@@ -24,7 +24,8 @@ function App() {
       date: new Date(2022, 7, 2),
     },
   ];
-  console.log(expenses[0].date);
+
+  //wrapper () are essential as you can only return one element at a time, this allows us to return multiple elements side by side
   return (
     <div>
       <h2>Let's get started!</h2>
