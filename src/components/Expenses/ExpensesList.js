@@ -9,6 +9,7 @@ const ExpensesList = (props) => {
     return <h2 className="expenses-list__fallback">Found no expenses.</h2>;
   }
 
+  // the key prop is required to list JSX elements so React can correctly identify and update list elements
   return (
     <ul className="expenses-list">
       {props.items.map((expense) => (
