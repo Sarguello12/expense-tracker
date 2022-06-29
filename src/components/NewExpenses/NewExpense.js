@@ -22,6 +22,8 @@ const NewExpense = (props) => {
     setIsEditing(false);
   };
 
+  // using the and (&&) operator as a conditional: if the first condition is met and there is not a value the operator
+  // will return the second condition
   return (
     <div className="new-expense">
       {!isEditing && (
